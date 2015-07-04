@@ -32,6 +32,16 @@ body{
 	src: url('../fonts/Lato-Bold.ttf');
 }
 
+@font-face{
+	font-family: 'CrimsonText-Roman';
+	src: url('../fonts/CrimsonText-Roman.ttf');
+}
+
+@font-face{
+	font-family: 'CrimsonText-Semibold';
+	src: url('../fonts/CrimsonText-Semibold.ttf');
+}
+
 
 /*
 	HEADER PRINCIPAL
@@ -109,8 +119,83 @@ body{
 	border-bottom: 4px solid #b2322e;
 }
 
+/*** MENU INDEX ***/
 
+.menu-index{
+	background: #f4f4f4;
+}
 
+.menu-index li{
+	display: block !important;
+	font-family: 'Lato-Bold';
+	font-size: 1em;
+	padding: 0.5em 0.5em 0.5em 1.5em;
+}
+
+.menu-index li a{
+	border-bottom: 0 !important;
+	color: #000000;
+	text-align: left !important;
+	width: 13em;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	background-color: #ff4842 !important;
+	border: 0 !important; 
+	color: #FFFFFF;
+}
+
+.download-angular{
+	text-align: center;
+	margin-top: 2em;
+}
+
+.download-angular a{
+	background: #fec752;
+	border-bottom: 4px solid #e29813;
+	border-radius: 3px;
+	color: #000000;
+	font-family: 'Nexa-Bold';
+	font-size: 1em;
+	padding: 0.6em;
+}
+
+.download-angular a:hover{
+	text-decoration: none;
+	background: #e29f27;
+}
+
+/*** FIN MENU INDEX ***/
+
+/*** TEXTOS INDEX ***/
+
+.textos-teoriaAngular p{
+	font-family: 'CrimsonText-Roman';
+	font-size: 1.5em;
+	color: #515151;
+	text-align: justify;
+	line-height: 1.6em;
+}
+
+#mg-p{
+	margin-top: 1.5em;
+}
+
+#tag-azul{
+	font-family: 'CrimsonText-Semibold';
+	color: #29abe2;
+}
+
+#tag-oscuro{
+	font-family: 'CrimsonText-Semibold';
+	color: #333333;
+}
+
+.codigo{
+	padding: 1em 0 1em 4em;
+}
+
+/*** FIN TEXTOS INDEX ***/
 
 .titulo-seccion{
 	text-align: center;
@@ -134,7 +219,7 @@ body{
 }
 
 #avatar{
-	margin-left: 4em;
+	margin-left: 8em;
 }
 
 .comandos figure img{
