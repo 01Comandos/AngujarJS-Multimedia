@@ -49,7 +49,7 @@ body{
 -------------------------------------------------------------------------*/
 
 .bandera{
-	margin-top: 1.5em;
+	margin-top: 1.2em;
 }
 
 .bandera img{
@@ -57,6 +57,11 @@ body{
 	height: 2.5em;
 	width: 2.5em;
 }
+
+/*
+	INDEX
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
 
 .header-general{
 	background: url('../img/pc-background.jpg');
@@ -247,6 +252,30 @@ body{
 
 .comandos a:hover{
 	color: #db4009;
+}
+
+/*
+	EMPEZAR.PHP
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+#header2{
+	background: #000000;
+}
+
+
+.menu,
+.contenido-empezar{
+	display:inline-block;
+	vertical-align:top;
+}
+
+.menu{
+	background:linear-gradient(to right, #2da3cb 0%,#2da3cb 25%,#FFFFFF 20%,#FFFFFF 100%);
+	width: 30%;
+}
+
+.contenido-empezar{
+	width: 70%;
 }
 
 

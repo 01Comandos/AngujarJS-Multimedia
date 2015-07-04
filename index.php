@@ -89,7 +89,7 @@
                         </ul>
 
                         <div class="download-angular">
-                            <a href="https://angularjs.org/">Descargar AngularJS</a>
+                            <a href="https://angularjs.org/" target="_blank">Descargar AngularJS</a>
                         </div>
                     </div>
                 </div>
