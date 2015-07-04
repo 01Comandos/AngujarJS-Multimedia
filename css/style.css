@@ -1,0 +1,179 @@
+/*
+
+	Proyecto: AngularJS - Asignatura Multimedia - UDO Núcleo Sucre
+
+	Diseñado y maquetado por: @01Comandos
+
+	Fecha: 03/07/2015;
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+body{
+	font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Bebas-Bold';
+    src: url('../fonts/BebasNeueBold.otf');
+}
+
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../fonts/BebasNeueBook.otf');
+}
+
+@font-face{
+	font-family: 'Nexa-Bold';
+	src: url('../fonts/NexaBold.otf');
+}
+
+@font-face{
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+
+
+/*
+	HEADER PRINCIPAL
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+.bandera{
+	margin-top: 1.5em;
+}
+
+.bandera img{
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+}
+
+.header-general{
+	background: url('../img/pc-background.jpg');
+	height: 550px;
+	margin-top: -4.7em;
+}
+
+.level-curso,
+.mensaje-invitar{
+	display: inline-block;
+}
+
+.level-curso{
+	margin-top: 13%;
+}
+
+.escudo-angular img{
+	width: 10em;
+}
+
+.texto1 img{
+	margin-top: -2em;
+}
+
+.texto1 span{
+	color: #FFFFFF;
+	font-family: 'Bebas-Regular';
+	font-size: 3em;
+}
+
+.texto2,
+.texto3{
+	margin-top: -0.5em;
+}
+
+.texto2 span{
+	color: #FFFFFF;
+	font-family: 'Bebas-Bold';
+	font-size: 3.5em;
+}
+
+.texto3{
+	width: 35em;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.empezar{
+	margin-top: 0.8em;
+}
+
+.empezar a{
+	color: #FFFFFF;
+	font-family: 'Nexa-Bold';
+	font-size: 1em;
+	text-decoration: none; 
+	background: #ff4842;
+	padding: 0.7em;
+	border-radius: 3px;
+	border-bottom: 4px solid #b2322e;
+}
+
+
+
+
+.titulo-seccion{
+	text-align: center;
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+}
+
+.titulo-seccion span{
+	color: #000000;
+	border-bottom: 1px solid #000000;
+	font-size: 1.8em;
+}
+
+.avatar-profesores{
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+.comandos{
+	display: inline-block;
+}
+
+#avatar{
+	margin-left: 4em;
+}
+
+.comandos figure img{
+	border-radius: 50%;
+	width: 10em;
+}
+
+.comandos span{
+	display: block;
+}
+
+#nombre-prof{
+	color: #333333;
+	font-family: 'Lato-Bold';
+	font-size: 1.3em;
+	margin-top: 0.5em;
+}
+
+.comandos a{
+	color: #ff4900;
+	font-size: 1.1em;
+	font-family: 'Lato-Bold';
+	text-decoration: underline;
+}
+
+.comandos a:hover{
+	color: #db4009;
+}
+
+
+
+
+
+/*
+	FOOTER
+---------------------------------------------------------------
+-------------------------------------------------------------*/
+h5{
+	color: #666666;
+	text-align: center;
+	font-family: 'Lato-Bold';
+}
