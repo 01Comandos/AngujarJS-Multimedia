@@ -265,6 +265,7 @@ body{
 
 #body-empezar{
 	background:linear-gradient(to right, #021c35 0%,#021c35 25%,#fefefe 25%,#fefefe 100%);
+	overflow: hidden;
 }
 
 .menu,
@@ -282,6 +283,7 @@ body{
 
 .contenido-empezar{
 	width: 72%;
+	padding-bottom: 4em;
 }
 
 .contenido-documentacion li{
@@ -303,6 +305,7 @@ body{
 
 #titulo-capitulo{
 	font-size: 1.2em;
+	color: #FFFFFF;
 }
 
 ul.subcategoria {
@@ -320,6 +323,28 @@ ul.subcategoria li{
 	overflow-y: auto;
 	overflow-x: hidden;
 	height: 771px;
+}
+
+.hide{
+	display: none;
+}
+
+.subcategoria .active {
+	color: #FFFFFF !important;
+}
+
+.subcategoria>li:hover {
+	color: #FFFFFF;
+}
+
+.subcategoria>li {
+	color: #4193cf;
+	cursor: pointer;
+}
+
+.text{
+	padding-right: 1.5em;
+	padding-bottom: 2em;
 }
 
 

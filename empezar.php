@@ -29,26 +29,26 @@
         <nav>
             <!--capitulo 1-->
             <ul class="capitulo1">
-                <li class="active" id="titulo-capitulo"><a href="#HelloAngular-contenido">Mi primera APP</a></li>
+                <li id="titulo-capitulo" data-target="helloangular">Mi primera APP</li>
                 <ul class="subcategoria">
-                    <li><a href="#HelloAngular-contenido">Hola AngujarJS</a></li>
-                    <li><a href="#workflow-contenido">Workflow</a></li>
-                    <li><a href="#filters-contenido">Filters</a></li>
-                    <li><a href="#ng-repeat-contenido">ng-repeat</a></li>
-                    <li><a href="#directives1-contenido">Directives</a></li>
-                    <li><a href="#ng-clic-contenido">ng-clic</a></li>
-                    <li><a href="#generalizaciones1-contenido">Generalizaciones</a></li>
+                    <li data-target="HelloAngular-contenido" target="HelloAngular-contenido" class="active">Hola AngujarJS</li>
+                    <li data-target="workflow-contenido" target="workflow-contenido">Workflow</li>
+                    <li data-target="filters-contenido" target="filters-contenido">Filters</li>
+                    <li data-target="ng-repeat-contenido" target="ng-repeat-contenido">ng-repeat</li>
+                    <li data-target="directives1-contenido" target="directives1-contenido">Directives</li>
+                    <li data-target="ng-clic-contenido" target="ng-clic-contenido">ng-clic</li>
+                    <li data-target="generalizaciones1-contenido" target="generalizaciones1-contenido">Generalizaciones</li>
                 </ul>
             </ul>
 
             <!--capitulo 2-->
             <ul class="capitulo1">
-                <li id="titulo-capitulo"><a href="#directives2-contenido">Aprende Directives</a></li>
+                <li id="titulo-capitulo" data-target="directives2">Aprende Directives</li>
                 <ul class="subcategoria">
-                    <li><a href="#directives2-contenido">Directives</a></li>
-                    <li><a href="#Built-in-contenido">Built-in</a></li>
-                    <li><a href="#installApp-contenido">InstallApp</a></li>
-                    <li><a href="#generalizaciones2-contenido">Generalizaciones</a></li>
+                    <li data-target="directives2-contenido" target="directives2-contenido">Directives</li>
+                    <li data-target="Built-in-contenido" target="Built-in-contenido">Built-in</li>
+                    <li data-target="installApp-contenido" target="installApp-contenido">InstallApp</li>
+                    <li data-target="generalizaciones2-contenido" target="generalizaciones2-contenido">Generalizaciones</li>
                 </ul>
             </ul>
         </nav>
@@ -93,7 +93,7 @@
             </li>
 
             <!--WORKFLOW-->
-            <li id="workflow-contenido">
+            <li class="hide" id="workflow-contenido">
                 <div class="titulo-seccion">
                     <span>WorkFlow</span>
                 </div>
@@ -110,7 +110,7 @@
             </li>
 
             <!--FILTERS-->
-            <li id="filters-contenido">
+            <li class="hide" id="filters-contenido">
                 <div class="titulo-seccion">
                     <span>Filters</span>
                 </div>
@@ -129,7 +129,7 @@
             </li>
 
             <!--NG-REPEAT-->
-            <li id="ng-repeat-contenido">
+            <li class="hide" id="ng-repeat-contenido">
                 <div class="titulo-seccion">
                     <span>ng-repeat</span>
                 </div>
@@ -157,7 +157,7 @@
             </li>
 
             <!--DIRECTIVES-->
-            <li id="directives1-contenido">
+            <li class="hide" id="directives1-contenido">
                 <div class="titulo-seccion">
                     <span>Directives</span>
                 </div>
@@ -171,7 +171,7 @@
             </li>
 
             <!--NG-CLIC-->
-            <li id="ng-clic-contenido">
+            <li class="hide" id="ng-clic-contenido">
                 <div class="titulo-seccion">
                     <span>ng-clic</span>
                 </div>
@@ -195,7 +195,7 @@
             </li>
 
             <!--GENERALIZACIONES 1 -->
-            <li id="generalizaciones1-contenido">
+            <li class="hide" id="generalizaciones1-contenido">
                 <div class="titulo-seccion">
                     <span>Generalizaciones</span>
                 </div>
@@ -209,7 +209,7 @@
 
             <!--CONTENIDO CAPITULO II
                 DIRECTIVES II-->
-            <li id="directives2-contenido">
+            <li class="hide" id="directives2-contenido">
                 <div class="titulo-seccion">
                     <span>Más Sobre Directives</span>
                 </div>
@@ -242,7 +242,7 @@
             </li>
 
             <!--BUILT-IN-->
-            <li id="Built-in-contenido">
+            <li class="hide" id="Built-in-contenido">
                 <div class="titulo-seccion">
                     <span>Built-in and Custom Directives</span>
                 </div>
@@ -260,7 +260,7 @@
             </li>
 
             <!--INSTALLAPP -->
-            <li id="installApp-contenido">
+            <li class="hide" id="installApp-contenido">
                 <div class="titulo-seccion">
                     <span>InstallApp</span>
                 </div>
@@ -281,7 +281,7 @@
             </li>
 
             <!--GENERALIZACIONES II-->
-            <li id="generalizaciones2-contenido">
+            <li class="hide" id="generalizaciones2-contenido">
                 <div class="titulo-seccion">
                     <span>Generalizaciones</span>
                 </div>
@@ -316,24 +316,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/complemento.js"></script>
 
-    <script>
-            $(document).ready(function(){
-                $('nav ul li').click(function(){
-                    $('nav ul li').removeClass('active')
-                    $(this).addClass('active')
-                    $('contenido-documentacion li').hide()
-                    if($(this).is(':first-child'))
-                    {
-                        $('contenido-documentacion li:first-child').fadeIn()
-                    }
-                    else {
-                        $('contenido-documentacion li:nth-child(2)').fadeIn()
-                    }
-                })
-            })
-
-            document.getElementById('portafolio').style.height=(screen.height-129)+'px';
-        </script>
   </body>
 </html>
