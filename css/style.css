@@ -174,7 +174,8 @@ body{
 
 /*** TEXTOS INDEX ***/
 
-.textos-teoriaAngular p{
+.textos-teoriaAngular p,
+.text p{
 	font-family: 'CrimsonText-Roman';
 	font-size: 1.5em;
 	color: #515151;
@@ -262,6 +263,9 @@ body{
 	background: #000000;
 }
 
+#body-empezar{
+	background:linear-gradient(to right, #021c35 0%,#021c35 25%,#fefefe 25%,#fefefe 100%);
+}
 
 .menu,
 .contenido-empezar{
@@ -270,13 +274,54 @@ body{
 }
 
 .menu{
-	background:linear-gradient(to right, #2da3cb 0%,#2da3cb 25%,#FFFFFF 20%,#FFFFFF 100%);
-	width: 30%;
+	font-family: 'Lato-Bold';
+	font-size: 1em;
+	padding: 3em 0 0 2em;
+	width: 25%;
 }
 
 .contenido-empezar{
-	width: 70%;
+	width: 72%;
 }
+
+.contenido-documentacion li{
+	list-style: none;
+}
+
+.capitulo1{
+	margin-bottom: 1.1em;
+}
+
+.capitulo1 li{
+	list-style: none;
+}
+
+.capitulo1 li a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#titulo-capitulo{
+	font-size: 1.2em;
+}
+
+ul.subcategoria {
+  border-left: 1px solid #4193cf;
+  margin-top: 0.8em;
+  position: relative;
+}
+
+ul.subcategoria li{
+	padding: 0.3em;
+}
+
+.menu,
+.contenido-empezar {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 771px;
+}
+
 
 
 

@@ -21,7 +21,7 @@
     <![endif]-->      
     
   </head>
-  <body>
+  <body id="body-empezar">
     <?php include 'inc/header2.php'; ?>
     
     <!-- MENU DE DOCUMENTACION -->
@@ -29,23 +29,27 @@
         <nav>
             <!--capitulo 1-->
             <ul class="capitulo1">
-                <li class="active"><a href="#">Mi primera APP</a></li>
-                <li><a href="#">Hola AngujarJS</a></li>
-                <li><a href="#">Workflow</a></li>
-                <li><a href="#">Filters</a></li>
-                <li><a href="#">ng-repeat</a></li>
-                <li><a href="#">Directives</a></li>
-                <li><a href="#">ng-clic</a></li>
-                <li><a href="#">Generalizaciones</a></li>
+                <li class="active" id="titulo-capitulo"><a href="#HelloAngular-contenido">Mi primera APP</a></li>
+                <ul class="subcategoria">
+                    <li><a href="#HelloAngular-contenido">Hola AngujarJS</a></li>
+                    <li><a href="#workflow-contenido">Workflow</a></li>
+                    <li><a href="#filters-contenido">Filters</a></li>
+                    <li><a href="#ng-repeat-contenido">ng-repeat</a></li>
+                    <li><a href="#directives1-contenido">Directives</a></li>
+                    <li><a href="#ng-clic-contenido">ng-clic</a></li>
+                    <li><a href="#generalizaciones1-contenido">Generalizaciones</a></li>
+                </ul>
             </ul>
 
             <!--capitulo 2-->
             <ul class="capitulo1">
-                <li><a href="#">Aprende Directives</a></li>
-                <li><a href="#">Directives</a></li>
-                <li><a href="#">Built-in</a></li>
-                <li><a href="#">InstallApp</a></li>
-                <li><a href="#">Generalizaciones</a></li>
+                <li id="titulo-capitulo"><a href="#directives2-contenido">Aprende Directives</a></li>
+                <ul class="subcategoria">
+                    <li><a href="#directives2-contenido">Directives</a></li>
+                    <li><a href="#Built-in-contenido">Built-in</a></li>
+                    <li><a href="#installApp-contenido">InstallApp</a></li>
+                    <li><a href="#generalizaciones2-contenido">Generalizaciones</a></li>
+                </ul>
             </ul>
         </nav>
     </section>
@@ -312,5 +316,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $('nav ul li').click(function(){
+                    $('nav ul li').removeClass('active')
+                    $(this).addClass('active')
+                    $('contenido-documentacion li').hide()
+                    if($(this).is(':first-child'))
+                    {
+                        $('contenido-documentacion li:first-child').fadeIn()
+                    }
+                    else {
+                        $('contenido-documentacion li:nth-child(2)').fadeIn()
+                    }
+                })
+            })
+
+            document.getElementById('portafolio').style.height=(screen.height-129)+'px';
+        </script>
   </body>
 </html>
